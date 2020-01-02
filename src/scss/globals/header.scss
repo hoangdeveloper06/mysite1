@@ -1,0 +1,143 @@
+header {
+    position: relative;
+    width: 100%;
+    height: 122px;
+    float: left;
+    .logo {
+        position: relative;
+        width: 20%;
+        height: 100%;
+        padding: 2%;
+        display: flex;
+        float: left;
+        a img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .main-menu {
+        position: relative;
+        width: 80%;
+        ul {
+            padding: 0 10px;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            li {
+                list-style: none;
+                width: auto;
+                text-align: center;
+                margin-left: auto;
+                a {
+                    font-size: 18px;
+                    color: #8A0D72;
+                    font-weight: 600;
+                    &:hover {
+                        color: #f6871f;
+                    }
+                }
+            }
+        }
+    }
+    .hamberger-menu {
+        display: none;
+        cursor: pointer;
+        z-index: 999;
+        position: absolute;
+        right: 5%;
+        top: 15%;
+        align-items: center;
+        .bar {
+            width: 35px;
+            height: 5px;
+            background-color: #c2c2c2;
+            margin: 6px 0;
+            transition: 0.4s;
+            &:first-child {
+                &.change {
+                    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+                    transform: rotate(-45deg) translate(-9px, 6px);
+                }
+            }
+            &:nth-child(2) {
+                &.change {
+                    opacity: 0;
+                }
+            }
+            &:last-child {
+                &.change {
+                    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+                    transform: rotate(45deg) translate(-8px, -8px);
+                }
+            }
+        }
+    }
+    .mobile-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        z-index: 999;
+        width: 100%;
+        height: 100vh;
+        background-color: #f6871f;
+        transition: .5s all ease-in-out;
+        ul {
+            padding: 0;
+            margin: 100px 0 0 0;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            li {
+                float: left;
+                list-style: none;
+                text-align: center;
+                margin-bottom: 30px;
+                a {
+                    font-size: 20px;
+                    color: #262626;
+                    font-weight: 700;
+                    cursor: pointer;
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        &.show-menu {
+            right: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    @media (min-width: 320px) and (max-width: 768px) {
+        header {
+            float: left;
+            position: relative;
+            width: 100%;
+            height: auto;
+            .logo {
+                width: 40%;
+                height: auto;
+                padding: 2%;
+                a img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .main-menu {
+                display: none;
+            }
+            .hamberger-menu {
+                display: inline-block;
+            }
+            .mobile-menu {
+                display: inline-block;
+            }
+        }
+    }
+}
