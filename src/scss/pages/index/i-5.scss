@@ -1,0 +1,52 @@
+.i-5{
+    float: left;
+    width: 100%;
+    position: relative;
+    background-color: $br2;
+    padding-top: 50px;
+    .content{
+        float: left;
+        margin: 0 auto;
+        position: relative;
+        .list-item{
+            float: left;
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+            .item-left{
+                width: 100%;
+                height: 285px;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                    -webkit-transition: 1.1s ease-in-out;
+                    transition: 1.1s ease-in-out;
+                    &:hover{
+                        -webkit-transform: scale(1.1);
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            .item-right{
+                width: 100%;
+                height: 600px;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                    -webkit-transition: 1.1s ease-in-out;
+                    transition: 1.1s ease-in-out;
+                    &:hover{
+                        -webkit-transform: scale(1.1);
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}

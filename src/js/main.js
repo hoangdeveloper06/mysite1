@@ -16,7 +16,18 @@ function HomeBanner() {
         slidesPerView: 1
     });
 }
-
+function secSlide(){
+    var swiper = new Swiper('.i-4 .swiper-container', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+            delay: 3000,
+            out: 2500,
+        }
+      });
+}
 //Hamberger_menu
 function activeMenu() {
     $('.hamberger-menu').on('click', function() {
@@ -30,4 +41,5 @@ document.addEventListener('DOMContentLoaded', () => {
     Loading();
     HomeBanner();
     activeMenu();
+    secSlide()
 });
