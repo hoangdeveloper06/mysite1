@@ -20,13 +20,13 @@
                 img{
                     width: 100%;
                     height: 100%;
-                    -webkit-transform: scale(1);
-                    transform: scale(1);
-                    -webkit-transition: 1.1s ease-in-out;
-                    transition: 1.1s ease-in-out;
+                    -webkit-transform: scale(1.1);
+                    transform: scale(1.1);
+                    -webkit-transition: .3s ease-in-out;
+                    transition: .3s ease-in-out;
                     &:hover{
-                        -webkit-transform: scale(1.1);
-                        transform: scale(1.1);
+                        -webkit-transform: scale(1);
+                        transform: scale(1);
                     }
                 }
             }
@@ -37,13 +37,13 @@
                 img{
                     width: 100%;
                     height: 100%;
-                    -webkit-transform: scale(1);
-                    transform: scale(1);
-                    -webkit-transition: 1.1s ease-in-out;
-                    transition: 1.1s ease-in-out;
+                    -webkit-transform: scale(1.1);
+                    transform: scale(1.1);
+                    -webkit-transition: .3s ease-in-out;
+                    transition: .3s ease-in-out;
                     &:hover{
-                        -webkit-transform: scale(1.1);
-                        transform: scale(1.1);
+                        -webkit-transform: scale(1);
+                        transform: scale(1);
                     }
                 }
             }
