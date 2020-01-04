@@ -12,12 +12,13 @@
             width: 100%;
             margin-left: auto;
             .item-img{
-                width: 100%;
-                height: 400px;
+                width: 360px;
+                height: 360px;
                 overflow: hidden;
                 img{
                     width: 100%;
                     height: 100%;
+                    object-fit: cover;
                     -webkit-transform: scale(1);
                     transform: scale(1);
                     -webkit-transition: .3s ease-in-out;
