@@ -26,9 +26,11 @@ header {
         display: flex;
         float: left;
         visibility: visible;
+        transition: all 0.4s ease;
         &.hiden-logo{
             visibility: hidden;
             display: none;
+            transition: all 0.4s ease;
         }
         a img {
             width: 100%;
@@ -74,7 +76,7 @@ header {
         z-index: 999;
         position: absolute;
         right: 5%;
-        top: 15%;
+        top: 40%;
         align-items: center;
         .bar {
             width: 35px;
@@ -116,9 +118,9 @@ header {
             margin: 100px 0 0 0;
             width: 100%;
             height: 100%;
-            align-items: center;
             display: flex;
             flex-direction: column;
+            line-height: initial;
             li {
                 float: left;
                 list-style: none;
@@ -138,6 +140,10 @@ header {
         &.show-menu {
             right: 0;
         }
+        &.hide{
+            position: absolute;
+            right: -100%;
+        }
     }
 }
 
@@ -145,16 +151,38 @@ header {
     @media (min-width: 320px) and (max-width: 768px) {
         header {
             float: left;
-            position: relative;
-            width: 100%;
-            height: auto;
+            position: fixed;
+            height: 15%;
+            line-height: initial;
+            &.sticky{
+                line-height: 80px;
+                height: 80px;
+                background: $while;
+                z-index: 999;
+            }
             .logo {
-                width: 40%;
-                height: auto;
+                width: 241.32px;
+                height: 85.5px;
                 padding: 2%;
+                visibility: visible;
+                line-height: initial;
+                transition: all 0.4s ease;
                 a img {
                     width: 100%;
                     height: 100%;
+                    object-fit: contain;
+                }
+                &.hiden-logo{
+                    visibility: visible;
+                    display: block;
+                    width: 241.32px;
+                    height: 79.5px;
+                    padding: 2%;
+                    a img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: scale-down;
+                    }
                 }
             }
             .main-menu {
@@ -162,6 +190,11 @@ header {
             }
             .hamberger-menu {
                 display: inline-block;
+                position: absolute;
+                top: 50%;
+                right: 10%;
+                transform: translate(10%, -50%);
+
             }
             .mobile-menu {
                 display: inline-block;

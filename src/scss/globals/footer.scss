@@ -17,7 +17,7 @@ footer {
     .footer-info {
         float: left;
         width: 100%;
-        padding: 20px 0;
+        padding: 3% 0;
         z-index: 999;
         h5 {
             font-size: 20px;
@@ -68,6 +68,39 @@ footer {
                 color: #fff;
                 font-size: 10px;
                 font-weight: 400;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    @media (min-width: 320px) and (max-width: 768px) {
+        footer{
+            width: 100%;
+            .footer-info{
+                width: 100%;
+                text-align: center;
+                h5{
+                    font-size: 13px;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: 12px;
+                    margin-bottom: 10px;
+                }
+            }
+            nav.footer-menu{
+                ul{
+                    padding: 0;
+                    width: 100%;
+                    li{
+                        a{
+                            font-size: 7px;
+                        }
+                    }
+                }
+            }
+            .coppyright{
+                width: 100%;
             }
         }
     }
