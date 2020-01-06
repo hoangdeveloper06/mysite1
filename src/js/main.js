@@ -2,6 +2,24 @@ import "@babel/polyfill";
 import U from "./lib/Utilities";
 import Loading from "./lib/Loading";
 
+//smooth scroll
+function stickyHeader(){
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1){  
+            $('header').addClass("sticky");
+            $('.logo').addClass("hiden-logo");
+            $('.main-menu').addClass("menu-sticky");
+            $('.no-sticky').addClass("y-sticky");
+          }
+          else{
+            $('header').removeClass("sticky");
+            $('.logo').removeClass("hiden-logo");
+            $('.main-menu').removeClass("menu-sticky");
+          }
+    });
+}
+
+
 function HomeBanner() {
     var mySwiper = new Swiper('.banner .swiper-container', {
         spaceBetween: 30,
@@ -74,4 +92,5 @@ document.addEventListener('DOMContentLoaded', () => {
     activeMenu();
     secSlide();
     scrolltop();
+    stickyHeader();
 });
