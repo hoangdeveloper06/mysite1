@@ -1,8 +1,8 @@
 section.i-3.mt-5.col-12
     .container-fluid
         .row
-            .bg-txt.col-md-8.col-12
-                .bg-img.col-12.p0
+            .bg-txt
+                .bg-img.p0
                     img(src="./assets/images/i-3/bg-text.png")
                     .text
                         h2 NHẬN NGAY ƯU ĐÃI ĐẶC BIỆT
@@ -12,11 +12,12 @@ section.i-3.mt-5.col-12
                         p Để được hỗ trợ MIỄN PHÍ và NHANH NHẤT, Quý khách hãy cung cấp 
                             br
                             |thông tin bên dưới. WORLDWIDE cam kết mọi thông tin là bảo mật.
-                    form(action="#", method="get")
-                        input(type="text" placeholder="Tên*")
-                        br
-                        input(type="text" placeholder="Số điện thoại*")
-                        br
-                        input(type="text" placeholder="Email*").mb-3
-                        br
-                        button.btn(type="submit") NHẬN ƯU ĐÃI NGAY
+                    form
+                        .form-group
+                            input#name(type="text" placeholder="Tên*")
+                            br
+                            input#phone(type="text" placeholder="Số điện thoại*")
+                            br
+                            input#email(type="text" placeholder="Email*").mb-3
+                            br
+                            button.btn() NHẬN ƯU ĐÃI NGAY

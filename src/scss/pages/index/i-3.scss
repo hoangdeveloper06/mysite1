@@ -1,132 +1,171 @@
-.i-3{
-    position: relative;
-    float: left;
-    width: 100%;
-    height: 801px;
-    background-image: url('../assets/images/i-3/background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    .bg-txt{
-        position: absolute;
-        width: 1000px;
-        height: 560px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 0 30px 0 30px;
-        border: 10px solid rgba($color: #8A0D72, $alpha: .2);
-        .bg-img{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            border-radius: 0 20px 0 20px;
-            overflow: hidden;
-            img{
-                width: 100%;
-                height: 100%;
-            }
-            .text{
-                position: absolute;
-                width: 100%;
-                top: 0;
-                left: 0;
-                text-align: center;
-                padding: 3%;
-                h2{
-                    font-size: 24px;
-                    color: $while;
-                    font-weight: 500;
-                }
-                hr{
-                    width: 80%;
-                    clear: both;
-                    margin-bottom: 20px;
-                }
-                p{
-                    font-size: 16px;
-                    color: $while;
-                    font-weight: 400;
-                }
-            }
-            form{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -19%);
-                padding: 1%;
-                width: 50%;
-                text-align: center;
-                input{
-                    width: 100%;
-                    padding: 1%;
-                    border: none;
-                    border-bottom: solid 2px $while;
-                    background: none;
-                    font-size: 16px;
-                    color: $while;
-                    margin-bottom: 20px;
-                    &::placeholder {
-                        color: $while;
-                    }
-                }
-                .btn {
-                    padding: 2%;
-                    border: none;
-                    background-color: $main_color;
-                    color: $main_color2;
-                    font-size: 16px;
-                    font-weight: 700;
-                    width: 200px;
-                    height: 50px;
-                    border-radius: 0 10px 0 10px;
-                    transition: .5s all ease-in-out;
-                    &:hover {
-                        background-color: $main_color2;
-                        color: $main_color;
-                        font-size: 16px;
-                        font-weight: 700;
-                        border-radius: 10px 0 10px 0;
-                    }
-                }
-            }
-        }
-    }
+.i-3 {
+	position: relative;
+	float: left;
+	width: 100%;
+	height: 801px;
+	background-image: url('../assets/images/i-3/background.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	.bg-txt {
+		position: absolute;
+		width: 1000px;
+		height: 560px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border-radius: 0 30px 0 30px;
+		border: 10px solid rgba($color: #8A0D72, $alpha: .2);
+
+		.bg-img {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			border-radius: 0 20px 0 20px;
+			overflow: hidden;
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
+
+			.text {
+				position: absolute;
+				width: 100%;
+				top: 0;
+				left: 0;
+				text-align: center;
+				padding: 3%;
+
+				h2 {
+					font-size: 24px;
+					color: $while;
+					font-weight: 500;
+				}
+
+				hr {
+					width: 80%;
+					clear: both;
+					margin-bottom: 20px;
+				}
+
+				p {
+					font-size: 16px;
+					color: $while;
+					font-weight: 400;
+				}
+			}
+
+			form {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -32%);
+				padding: 1%;
+				width: 75%;
+				text-align: center;
+
+				input {
+					width: 100%;
+					padding: 1%;
+					border: none;
+					border-bottom: solid 2px $while;
+					background: none;
+					font-size: 16px;
+					color: $while;
+					margin-bottom: 20px;
+
+					&::placeholder {
+						color: $while;
+					}
+				}
+
+				.btn {
+					padding: 2%;
+					border: none;
+					background-color: $main_color;
+					color: $main_color2;
+					font-size: 16px;
+					font-weight: 700;
+					width: 200px;
+					height: 50px;
+					border-radius: 0 10px 0 10px;
+					transition: .5s all ease-in-out;
+
+					&:hover {
+						background-color: $main_color2;
+						color: $main_color;
+						font-size: 16px;
+						font-weight: 700;
+						border-radius: 10px 0 10px 0;
+					}
+				}
+			}
+		}
+	}
 }
-@media screen and (max-width: 768px) {
-    @media (min-width: 320px) and (max-width: 768px) {
-        .i-3{
-            width: 100%;
-            height: 100vh;
-            .bg-txt{
-                width: 100%;
-                height: 400px;
-                .bg-img{
-                    .text{
-                        h2{
-                            font-size: 18px;
-                        }
-                        p{
-                            font-size: 9px;
-                        }
+
+@media(max-width: 768px) {
+	.i-3 {
+		.bg-txt {
+			width: 100%;
+
+			.bg-img {
+				.text {
+					h2 {
+						font-size: 1.2rem;
+					}
+
+					p {
+						font-size: 1.2rem;
+					}
+				}
+
+				form {
+					input {
+						font-size: 1.2rem;
                     }
-                    form{
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -19%);
-                        padding: 1%;
-                        width: 84%;
-                        text-align: center;
-                        .btn{
-                            width: 50%;
-                            font-size: 11px;
-                        }
+                    .btn{
+                        font-size: 1.3rem;
+                        width: auto;
+                        padding: 2%;
                     }
-                }
-            }
-        }
-    }
+				}
+			}
+		}
+	}
+}
+@media(max-width: 375px){
+    .i-3 {
+		.bg-txt {
+			width: 100%;
+
+			.bg-img {
+				.text {
+                    text-align: center;
+					h2 {
+						font-size: 1rem;
+					}
+
+					p {
+						font-size: 1rem;
+					}
+				}
+
+				form {
+					input {
+						font-size: 1.2rem;
+                    }
+                    .btn{
+                        font-size: 1.3rem;
+                        width: auto;
+                        padding: 3%;
+                    }
+				}
+			}
+		}
+	}
 }

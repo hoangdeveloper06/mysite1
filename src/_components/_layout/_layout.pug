@@ -25,13 +25,13 @@ html(lang="en")
 		#gotoTop
 			img(src="./assets/gotop.png" alt="")
 		//- main content
-		block header
+		header
 			include _header.pug
 		main
-			block banner,breadcrumb
 			block main
+			block banner,breadcrumb
 			#js-page-verify(class=bodyClass hidden)
-		block footer
+		footer
 			include _footer.pug
 		//- end main content
 		//- #go-top

@@ -1,107 +1,147 @@
-footer { 
-    position: relative;
-    float: left;
-    width: 100%;
-    background-image: url('../assets/images/banner/footer-br.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    &::before{
-        position: absolute;
-        content: '';
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(131, 18, 141, 0.2);
-    }
-    .footer-info {
-        float: left;
-        width: 100%;
-        padding: 3% 0;
-        z-index: 999;
-        h5 {
-            font-size: 20px;
-            font-weight: 600;
-            color: #fff;
-            font-family: Roboto, sans-serif;
-            margin-bottom: 30px;
-        }
-        p {
-            font-size: 14px;
-            font-weight: 500;
-            color: #fff;
-        }
-    }
-    .footer-menu {
-        float: left;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        ul {
-            padding: 0 10px;
-            display: flex;
-            width: 100%;
-            height: 100%;
-            align-items: center;
-            li {
-                list-style: none;
-                width: auto;
-                text-align: center;
-                margin-left: auto;
-                a {
-                    font-size: 13px;
-                    color: #fff;
-                    font-weight: 400;
-                }
-            }
-        }
-    }
-    .coppyright {
-        width: 100%;
-        z-index: 999;
-        .footer-coppy {
-            width: 100%;
-            padding: 1%;
-            text-align: center;
-            background-color: #8A0D72;
-            span {
-                color: #fff;
-                font-size: 10px;
-                font-weight: 400;
-            }
-        }
-    }
+footer {
+	position: relative;
+	float: left;
+	width: 100%;
+	background-image: url('../assets/images/banner/footer-br.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	&::before {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(131, 18, 141, 0.2);
+	}
+
+	.footer-info {
+		float: left;
+		width: 100%;
+		padding: 3% 0;
+		z-index: 999;
+
+		h5 {
+			font-size: 1.2rem;
+			font-weight: 600;
+			color: #fff;
+			font-family: Roboto, sans-serif;
+			margin-bottom: 30px;
+		}
+
+		p {
+			font-size: 14px;
+			font-weight: 500;
+			color: #fff;
+		}
+	}
+
+	.footer-menu {
+		float: left;
+		width: 100%;
+		height: 100%;
+		display: flex;
+
+		ul {
+			padding: 0 10px;
+			display: flex;
+			width: 100%;
+			height: 100%;
+			align-items: center;
+
+			li {
+				list-style: none;
+				width: auto;
+				text-align: center;
+				margin: auto;
+
+				a {
+					font-size: .8rem;
+					color: #fff;
+					font-weight: 400;
+				}
+			}
+		}
+	}
+
+	.coppyright {
+		width: 100%;
+		z-index: 999;
+
+		.footer-coppy {
+			width: 100%;
+			padding: 1%;
+			text-align: center;
+			background-color: #8A0D72;
+
+			span {
+				color: #fff;
+				font-size: 10px;
+				font-weight: 400;
+			}
+		}
+	}
 }
-@media screen and (max-width: 768px) {
-    @media (min-width: 320px) and (max-width: 768px) {
-        footer{
-            width: 100%;
-            .footer-info{
-                width: 100%;
-                text-align: center;
-                h5{
-                    font-size: 13px;
-                    margin-bottom: 10px;
-                }
-                p{
-                    font-size: 12px;
-                    margin-bottom: 10px;
-                }
-            }
-            nav.footer-menu{
-                ul{
-                    padding: 0;
-                    width: 100%;
-                    li{
-                        a{
-                            font-size: 7px;
-                        }
-                    }
-                }
-            }
-            .coppyright{
-                width: 100%;
-            }
-        }
-    }
+
+@media(max-width: 768px) {
+	footer {
+		width: 100%;
+
+		.footer-info {
+			width: 100%;
+			text-align: center;
+
+			h5 {
+				font-size: .9rem;
+				margin-bottom: 10px;
+				font-weight: 400;
+			}
+
+			p {
+				font-size: .7rem;
+				margin-bottom: 10px;
+			}
+		}
+
+		nav.footer-menu {
+			ul {
+				padding: 0;
+				width: 100%;
+
+				li {
+					margin: auto;
+
+					a {
+						font-size: .6rem;
+					}
+				}
+			}
+		}
+
+		.coppyright {
+			width: 100%;
+		}
+	}
+}
+
+@media(max-width: 375px) {
+	footer {
+		width: 100%;
+
+		nav.footer-menu {
+			ul {
+				padding: 0;
+				width: 100%;
+
+				li {
+					margin: auto;
+
+					a {
+						font-size: .5rem;
+					}
+				}
+			}
+		}
+	}
 }

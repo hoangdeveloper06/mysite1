@@ -1,17 +1,17 @@
-section.banner.col-12.p0
+section.banner.p0
     .container-fluid
         .row
-            .swiper-container.col-12.p0
+            .swiper-container.p0
                 .swiper-wrapper
                     .swiper-slide                                
                         img(src="./assets/images/banner/banner-01.png", alt="")
                     .swiper-slide
                         img(src="./assets/images/banner/banner-02.png", alt="")
-        .container
-            .row
-                form(action="", method="post")
-                    .form-group.col-12
-                        input(type="text" placeholder="Tên*")
-                        input(type="text" placeholder="Số điện thoại*")
-                        input(type="email" placeholder="Email*")
-                        button.btn-new(type="submit") NHẬN ƯU ĐÃI NGAY
+    .container
+        .row
+            form
+                .form-group
+                    input#name(type="text" placeholder="Tên*")
+                    input#phone(type="text" placeholder="Số điện thoại*")
+                    input#email(type="text" placeholder="Email*")
+                    button.btn-new(data-url="#") NHẬN ƯU ĐÃI NGAY

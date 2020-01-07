@@ -1,74 +1,172 @@
-.i-2{
-    float: left;
-    width: 100%;
-    position: relative;
-    .promotion-list{
-        float: left;
-        width: 100%;
-        position: relative;
-        .list-item{
-            position: relative;
-            padding: 1%;
-            width: 100%;
-            margin-left: auto;
-            .item-img{
-                width: 360px;
-                height: 360px;
-                overflow: hidden;
-                img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    -webkit-transform: scale(1);
-                    transform: scale(1);
-                    -webkit-transition: .3s ease-in-out;
-                    transition: .3s ease-in-out;
-                    &:hover{
-                        -webkit-transform: scale(1.1);
-	                    transform: scale(1.1);
-                    }
-                }
-            }
-            .text-item{
-                padding: 2%;
-                width: 100%;
-                text-align: center;
-                p{
-                    font-size: 16px;
-                    color: $main_color;
-                    font-weight: 400;
-                }
-            }
-        }
-    }
+.i-2 {
+	float: left;
+	width: 100%;
+	position: relative;
+
+	.promotion-list {
+		width: 100%;
+		position: relative;
+
+		.list-item {
+			position: relative;
+			padding: 1%;
+			width: 100%;
+			margin-left: auto;
+
+			.item-img {
+				overflow: hidden;
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					-webkit-transform: scale(1);
+					transform: scale(1);
+					-webkit-transition: .3s ease-in-out;
+					transition: .3s ease-in-out;
+
+					&:hover {
+						-webkit-transform: scale(1.1);
+						transform: scale(1.1);
+					}
+				}
+			}
+
+			.text-item {
+				padding: 2%;
+				width: 100%;
+				text-align: center;
+
+				p {
+					font-size: 16px;
+					color: $main_color;
+					font-weight: 400;
+				}
+			}
+		}
+	}
 }
-@media screen and (max-width: 768px) {
-    @media (min-width: 320px) and (max-width: 768px) {
-        .i-2{
-            width: 100%;
-            .promotion-list{
-                .list-item{
+
+@media(max-width: 1024px) {
+	.i-2 {
+		width: 100%;
+
+		.title-section {
+			width: 100%;
+
+			h1 {
+				font-size: 1.8rem;
+			}
+		}
+
+		.text-line {
+			&::after {
+				content: '';
+				position: absolute;
+				width: 71%;
+				height: 2px;
+				background-color: #c1c1c1;
+				top: 85%;
+				left: 29%;
+			}
+		}
+
+		.promotion-list {
+			width: 100%;
+
+			.list-item {
+				.item-img {
+					width: 100%;
+				}
+
+				.text-item {
+					text-align: center;
+
+					p {
+						font-size: 1.2rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media(max-width: 768px) {
+	.i-2 {
+		width: 100%;
+    	.promotion-list {
+			width: 100%;
+
+			.list-item {
+				.item-img {
                     width: 100%;
-                    padding: 0;
-                    .item-img{
+                    img{
                         width: 100%;
-                        height: 360px;
-                        img{
-                            width: 100%;
-                            height: 100%;
-                            object-fit: contain;
+                        height: 100%;
+                        &:hover{
+                            display: none;
                         }
                     }
-                    .text-item{
-                        padding: 2% 0;
+				}
+
+				.text-item {
+					text-align: center;
+
+					p {
+						font-size: 1.1rem;
+					}
+				}
+			}
+		}
+	}
+}
+@media(max-width: 375px){
+	.i-2 {
+		.title-section{
+			h1{
+				font-size: 1.3rem;
+			}
+		}
+		.text-line{
+			width: 100%;
+			&::after {
+				content: '';
+				position: absolute;
+				width: 45%;
+				height: 2px;
+				background-color: #c1c1c1;
+				top: 85%;
+				left: 55%;
+			}
+			p{
+				font-size: .6rem;
+				font-weight: none;
+				letter-spacing: none;
+			}
+		}
+		width: 100%;
+    	.promotion-list {
+			width: 100%;
+			.list-item {
+				.item-img {
+                    width: 100%;
+                    img{
                         width: 100%;
-                        text-align: center;
-                        p{
-                            font-size: 12px;
+                        height: 100%;
+                        &:hover{
+                            display: none;
                         }
                     }
-                }
-            }
-        }
-    }
+				}
+
+				.text-item {
+					text-align: center;
+
+					p {
+						font-size: 1.1rem;
+					}
+				}
+			}
+		}
+	}
 }
